@@ -29,4 +29,5 @@ git commit -m "UPDATE: file"
 git checkout main
 git merge dev
 
+git push --set-upstream origin main
 git push 
