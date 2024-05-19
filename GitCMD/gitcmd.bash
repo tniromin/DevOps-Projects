@@ -21,23 +21,14 @@ fi
 git clone $repo $dir
 git remote add origin $repo
 
-
-git checkout -b dev
-git checkout dev
-
+git checkout -b n
 
 echo "$(date)" >> $dir/file.md
 
 git add .
 git commit -m "UPDATE: file"
 git checkout main
-git merge dev
+git merge n
 
-git add .
-git commit -m "UPDATE: Dev Merge"
-
-
-git push --set-upstream origin main
-git push origin
-
+git push -u origin main
 git remote remove origin
