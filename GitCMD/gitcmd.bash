@@ -23,6 +23,7 @@ git remote add origin $repo
 
 
 git checkout -b dev
+git checkout dev
 
 
 echo "$(date)" >> $dir/file.md
