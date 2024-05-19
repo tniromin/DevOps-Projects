@@ -19,8 +19,8 @@ fi
 
 git clone $repo $dir
 git remote add origin $repo
-git pull origin main
 
+git checkout -d dev
 git checkout -b dev
 
 
