@@ -18,7 +18,7 @@ if [ "$#" -ne 2 ];then
 fi
 
 git clone $repo $dir
-git remote add main $repo
+git remote add origin main $repo
 
 git checkout -b dev
 
