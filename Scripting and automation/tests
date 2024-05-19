@@ -1,3 +1,4 @@
+# Couldnt remember if this worked, had to verify quickly
 filename="tra""Stops"
 
 echo $filename
