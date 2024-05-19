@@ -8,7 +8,8 @@ dir=$2
 
 # Use personal access token in place of pass wod
 
-
+## For errors
+# git reset --hard
 
 if [ "$#" -ne 2 ];then
     echo "Usage: gitcmd.bash <URL-to-Repo> <Directory-Name>"
