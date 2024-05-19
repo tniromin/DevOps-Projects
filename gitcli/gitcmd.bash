@@ -19,7 +19,7 @@ if [ "$#" -ne 2 ];then
 fi
 
 git clone $repo $dir
-git remote add origin $repo
+#git remote add origin $repo
 
 git checkout -b nnn
 
@@ -30,5 +30,5 @@ git commit -m "UPDATE: file"
 git checkout main
 git merge nnn
 
-git push -u origin main
+git push 
 git remote remove origin
