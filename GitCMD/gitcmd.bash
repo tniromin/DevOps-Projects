@@ -14,6 +14,7 @@ dir=$2
 if [ "$#" -ne 2 ];then
     echo "Usage: gitcmd.bash <URL-to-Repo> <Directory-Name>"
     echo "Using custom DIR name & Custom Test Repo"
+    # defaults can be changed
     repo="https://github.com/tniromin/test.git "
     dir="repo"
 fi
