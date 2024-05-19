@@ -14,23 +14,27 @@ dir=$2
 if [ "$#" -ne 2 ];then
     echo "Usage: gitcmd.bash <URL-to-Repo> <Directory-Name>"
     echo "Using custom DIR name & Custom Test Repo"
-    repo="https://github.com/tniromin/test.git"
-    dir="Repo"
+    repo="https://github.com/tniromin/test.git "
+    dir="testrep"
 fi
 
 git clone $repo $dir
 git remote add origin $repo
 
-git checkout -d dev
+
 git checkout -b dev
 
 
-echo "$(date)" >> $dir/file
+echo "$(date)" >> $dir/file.md
 
 git add .
 git commit -m "UPDATE: file"
 git checkout main
 git merge dev
+
+git add .
+git commit -m "UPDATE: Dev Merge"
+
 
 git push --set-upstream origin main
 git push origin
